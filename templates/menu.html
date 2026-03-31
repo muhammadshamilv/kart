@@ -12,9 +12,9 @@
                     <li><a href="{% url "list_products" %}">Products</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a href="account.html">Account</a></li>
+                    <li><a href="{% url 'account' %}">Account</a></li>
                 </ul>
             </nav>
-            <a href="cart.html"><img src="{% static 'images/cart.png' %}" alt="cart" width=30px height=30px></a><!--adding cart image in navigation section -->
+            <a href="{% url 'cart' %}"><img src="{% static 'images/cart.png' %}" alt="cart" width=30px height=30px></a><!--adding cart image in navigation section -->
             <img src="{% static 'images/menu.png' %}" class="menu-icon" onclick="menutoggle()"><!--this is the menu icon which  will be displayed on smaller screens with 3 lines, and when we click on it, it will open upside down or like dropdown menu, to open like this we have pass one menutoggle function to it which we have written in the end in js-->
         </div>
